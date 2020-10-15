@@ -5,7 +5,7 @@ from torch.nn.utils.rnn import pack_padded_sequence, pad_packed_sequence
 from kobert.pytorch_kobert import get_pytorch_kobert_model
 from transformers import BertModel, BertConfig
 # from pytorch_pretrained_bert import BertModel, BertConfig
-from torchcrf import CRF
+from torchcrf import CRF # pip install pytorch-crf
 
 bert_config = {'attention_probs_dropout_prob': 0.1,
                  'hidden_act': 'gelu',
